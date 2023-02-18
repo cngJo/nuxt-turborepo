@@ -12,6 +12,7 @@ coverage
 .nuxt/
 .output
 build
+storybook-static
 
 # misc
 .DS_Store
