@@ -1,7 +1,10 @@
-import type { NavigationGuard } from 'vue-router'
-export type MiddlewareKey = string
+import type { NavigationGuard } from "vue-router";
+export type MiddlewareKey = string;
 declare module "/Users/johannes/Programming/cngJo/nuxt-turborepo-example/node_modules/nuxt/dist/pages/runtime/composables" {
   interface PageMeta {
-    middleware?: MiddlewareKey | NavigationGuard | Array<MiddlewareKey | NavigationGuard>
+    middleware?:
+      | MiddlewareKey
+      | NavigationGuard
+      | Array<MiddlewareKey | NavigationGuard>;
   }
 }

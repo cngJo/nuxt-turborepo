@@ -1,9 +1,9 @@
 <template>
-    <button><slot /></button>
+  <button><slot /></button>
 </template>
 
 <style>
 button {
-    color: blue;
+  color: blue;
 }
 </style>

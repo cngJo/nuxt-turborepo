@@ -1,10 +1,8 @@
+import type { Defu } from "defu";
 
-import type { Defu } from 'defu'
+declare const inlineConfig = {};
+type ResolvedAppConfig = Defu<typeof inlineConfig, []>;
 
-
-declare const inlineConfig = {}
-type ResolvedAppConfig = Defu<typeof inlineConfig, []>
-
-declare module 'nuxt/schema' {
-  interface AppConfig extends ResolvedAppConfig { }
+declare module "nuxt/schema" {
+  interface AppConfig extends ResolvedAppConfig {}
 }
