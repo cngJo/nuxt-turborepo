@@ -18,6 +18,9 @@
 		"test:ci": {
       "outputs": []
     },
+		"test:e2e": {
+      "outputs": []
+    },
     "dev": {
       "cache": false
     }
