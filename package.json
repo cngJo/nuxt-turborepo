@@ -10,7 +10,9 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "lint:write": "turbo run lint:write"
+    "lint:write": "turbo run lint:write",
+		"test": "turbo run test",
+		"test:ci": "turbo run test:ci"
   },
   "devDependencies": {
     "eslint-config-custom": "*",

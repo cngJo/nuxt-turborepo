@@ -12,6 +12,12 @@
     "lint:write": {
       "outputs": ["src/**"]
     },
+		"test": {
+      "outputs": []
+    },
+		"test:ci": {
+      "outputs": []
+    },
     "dev": {
       "cache": false
     }

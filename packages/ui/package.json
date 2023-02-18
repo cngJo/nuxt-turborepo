@@ -6,12 +6,17 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint src",
-    "lint:write": "eslint src --fix"
+    "lint:write": "eslint src --fix",
+    "test": "vitest",
+    "test:ci": "vitest run"
   },
   "devDependencies": {
+    "@vue/test-utils": "^2.2.10",
     "eslint-config-custom": "*",
+    "jsdom": "^21.1.0",
     "tsconfig": "*",
     "typescript": "^4.5.2",
+    "vitest": "^0.28.5",
     "vue": "^3.2"
   },
   "dependencies": {
