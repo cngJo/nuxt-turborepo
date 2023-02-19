@@ -1,6 +1,7 @@
-# Turborepo starter
+# Turborepo Nuxt implementation
 
-This is an official npm starter turborepo.
+This is based an the official npm starter turborepo, but with some additions.
+
 
 ## What's inside?
 
@@ -8,13 +9,25 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `docs`: a [Nuxt](https://nuxt.com/) app
+- `web`: another [Nuxt](https://nuxt.com/) app
+- `storybook`: a [storybook](https://storybook.js.org) setup
+- `ui`: a vuejs component library shared by both `web` and `docs` applications as well as `storybook`
+- `eslint-config-custom`: `eslint` configurations (setup for vuejs and nuxt)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+
+## Testing
+
+This turborepo has testing setup, bases on
+
+- `vitest` for the comonent library and unit tests in the apps
+- `playwright` for end to end testing in the applications
+
+## Automation
+
+This turobrepo has automation with GithubActions setup. Linting and tests are executed on all pushes to `main` and pull requests.
 
 ### Utilities
 
