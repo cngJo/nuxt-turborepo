@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt dev",
+    "dev": "PORT=3000 nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "lint": "eslint src",
