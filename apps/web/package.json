@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt dev",
+    "dev": "PORT=3000 nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "lint": "eslint src",
-    "lint:write": "eslint src --fix"
+    "lint:write": "eslint src --fix",
+		"test:e2e": "playwright test tests/e2e"
   },
   "dependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@nuxt/devtools": "^0.1.2",
+    "@playwright/test": "^1.30.0",
     "@types/node": "^17.0.12",
     "eslint-config-custom": "file:../eslint-config-custom",
     "tsconfig": "*",

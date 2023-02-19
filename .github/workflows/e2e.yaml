@@ -1,19 +1,11 @@
-name: CI
+name: E2E Tests
 
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    types: [opened, synchronize]
   workflow_call:
 
 jobs:
-
-  e2e:
-    uses: './.github/workflows/e2e.yaml'
-
-  build:
-      name: Build and Test
+  playwright:
+      name: Playwright tests
       timeout-minutes: 15
       runs-on: ubuntu-latest
       # To use Remote Caching, uncomment the next lines and follow the steps below.
@@ -37,11 +29,13 @@ jobs:
         - name: Install dependencies
           run: npm clean-install
 
-        - name: Lint
-          run: npm run lint
+        - name: "Install playwright"
+          run: npx playwright install
 
-        - name: Build
-          run: npm run build
-
-        - name: Test
-          run: npm run test:ci
+        - name: "Run application and playwright"
+          run: |
+            npm run dev &
+            echo "Sleep for 20 sec."
+            sleep 20                # Sleep for 20 secs. to give nuxt some time to boot
+            echo "Done sleeping"
+            npm run test:e2e
