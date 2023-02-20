@@ -1,6 +1,6 @@
 {
   "extends": "tsconfig/nuxt.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".nuxt/nuxt.d.ts"],
   "exclude": ["node_modules"],
 	"compilerOptions": {
 		"paths": {
