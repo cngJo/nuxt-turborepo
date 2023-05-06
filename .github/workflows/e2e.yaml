@@ -24,13 +24,16 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: 19
-            cache: 'npm'
 
-        - name: Install dependencies
-          run: npm clean-install
+        - uses: pnpm/action-setup@v2
+          with:
+            version: ^8.4
+            run_install: |
+              - recursive: true
+                args: [--frozen-lockfile, --strict-peer-dependencies]
 
         - name: "Install playwright"
-          run: npx playwright install
+          run: pnpm dlx playwright install
 
         - name: "Run application and playwright"
           run: |

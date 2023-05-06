@@ -32,16 +32,19 @@ jobs:
           uses: actions/setup-node@v3
           with:
             node-version: 19
-            cache: 'npm'
 
-        - name: Install dependencies
-          run: npm clean-install
+        - uses: pnpm/action-setup@v2
+          with:
+            version: ^8.4
+            run_install: |
+              - recursive: true
+                args: [--frozen-lockfile, --strict-peer-dependencies]
 
         - name: Lint
-          run: npm run lint
+          run: pnpm run lint
 
         - name: Build
-          run: npm run build
+          run: pnpm run build
 
         - name: Test
-          run: npm run test:ci
+          run: pnpm run test:ci
