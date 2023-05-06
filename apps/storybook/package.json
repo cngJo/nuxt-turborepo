@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-		"ui": "*"
+		"ui": "workspace:*"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
@@ -39,7 +39,7 @@
     "typescript": "~5.0.4",
     "vite": "^4.3.4",
     "vue-tsc": "^1.6.4",
-		"eslint-config-custom": "file:../eslint-config-custom",
-		"tsconfig": "*"
+		"eslint-config-custom": "workspace:*",
+		"tsconfig": "workspace:*"
   }
 }
