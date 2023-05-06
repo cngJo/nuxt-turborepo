@@ -6,9 +6,5 @@
     "base.json",
     "nextjs.json",
     "react-library.json"
-  ],
-  "dependencies": {
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
-    "eslint-config-custom": "file:../eslint-config-custom"
-  }
+  ]
 }

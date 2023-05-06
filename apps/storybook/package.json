@@ -39,7 +39,7 @@
     "typescript": "~5.0.4",
     "vite": "^4.3.4",
     "vue-tsc": "^1.6.4",
-		"eslint-config-custom": "*",
+		"eslint-config-custom": "file:../eslint-config-custom",
 		"tsconfig": "*"
   }
 }

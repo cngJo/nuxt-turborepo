@@ -16,8 +16,6 @@
 		"test:e2e": "turbo run test:e2e"
   },
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {

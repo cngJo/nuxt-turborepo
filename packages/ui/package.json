@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@vue/test-utils": "^2.2.10",
-    "eslint-config-custom": "*",
+    "eslint-config-custom": "file:../eslint-config-custom",
     "jsdom": "^21.1.0",
     "tsconfig": "*",
     "typescript": "^4.5.2",
