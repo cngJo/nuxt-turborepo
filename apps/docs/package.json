@@ -18,7 +18,7 @@
     "@babel/core": "^7.0.0",
     "@nuxt/devtools": "^0.1.2",
     "@types/node": "^17.0.12",
-    "eslint-config-custom": "*",
+    "eslint-config-custom": "file:../eslint-config-custom",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }
